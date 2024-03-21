@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event in JavaScript</title>
+  </head>
+  <body>
+    <form action="">
+      <label for="num1">Number1</label>
+      <input type="number" id="num1" placeholder="10" />
+      <br /><br /><br />
+      <label for="num2">Number2</label>
+      <input type="number" id="num2" placeholder="10" />
+      <br /><br /><br />
+      <input type="submit" onclick="add()" />
+    </form>
+    <script>
+      // Event in JavaScript
+      function add() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        alert(a + b);
+      }
+    </script>
+  </body>
+</html>

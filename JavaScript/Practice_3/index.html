@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        background: rgb(34, 193, 195);
+
+        background: linear-gradient(
+          0deg,
+          rgba(34, 193, 195, 1) 0%,
+          rgba(253, 187, 45, 1) 100%
+        );
+      }
+      div {
+        width: 300px;
+        height: 180px;
+        background-color: navy;
+        color: white;
+        position: relative;
+
+        margin: 200px auto;
+        padding: 50px 25px;
+        font-size: large;
+      }
+      input {
+        margin-bottom: 30px;
+        margin-left: 15px;
+      }
+      input:last-of-type {
+        margin-top: 20px;
+        margin-left: 68px;
+        width: 150px;
+        height: 30px;
+        font-size: 16px;
+
+        font-weight: 550;
+      }
+      input:first-of-type {
+        margin-left: 35px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+        <br /><br />
+        <label for="pswd">password</label>
+        <input type="password" id="pswd" />
+        <br /><br />
+        <input type="submit" onclick="return check()" value="Login " ; />
+        <btr />
+        <p id="p1"></p>
+        <p id="p2"></p>
+      </form>
+    </div>
+
+    <script>
+      function check() {
+        name = document.getElementById("name").value;
+        pswd = document.getElementById("pswd").value;
+        if (name.length >= 6 && pswd.length >= 8) {
+          alert(" Login Successful");
+          document.getElementById("p1").innerHTML = name;
+          document.getElementById("p2").innerHTML = pswd;
+        } else if (pswd.length < 8 && name.length < 6) {
+          alert("invalid name & invalid password");
+        } else if (name.length < 6) {
+          alert("invalid name ");
+        } else if (pswd.length < 8) {
+          alert("invalid password");
+        }
+        return false;
+      }
+    </script>
+  </body>
+</html>
