@@ -161,3 +161,11 @@ async function gettingDatas() {
   await getDataaa(3);
 }
 gettingDatas();
+
+/*
+fetch API:
+The Fetch API provides an interface for fetching (sending/receiving) resources.
+It uses Request and Response objects.
+The fetch method is used to fetch a resource (data).
+let promise = fetch( url, [options] )
+*/
