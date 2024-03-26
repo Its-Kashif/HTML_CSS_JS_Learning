@@ -1,4 +1,4 @@
-//Modularity in JavaScript(It is increase the reusabality and readibility of program.)
+//Modularity in JavaScript(It git increase the reusabality and readibility of program.)
 import { add } from "./add.js";
 import { mul } from "./mul.js";
 import { sub } from "./sub.js";

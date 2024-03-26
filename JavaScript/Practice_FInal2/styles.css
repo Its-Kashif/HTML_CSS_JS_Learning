@@ -1,4 +1,4 @@
-* .para {
+.para {
   font-weight: 600;
   color: brown;
   font-style: italic;
@@ -7,7 +7,7 @@
   background-color: bisque;
   text-decoration: line-through;
 }
-*/ #div_area {
+#div_area {
   height: 100px;
   width: 120px;
   background-color: burlywood;
